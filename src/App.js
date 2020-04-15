@@ -9,6 +9,9 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComp from './components/ParentComp';
+import NameList from './components/NameList';
+import { Simulate } from 'react-dom/test-utils';
+import StyleSheet from './components/Stylesheet';
 function App() {
   return (
     <div className="App">
@@ -16,9 +19,13 @@ function App() {
       {/* <FunctionClick/> */}
       {/* <ClassClick/> */}
       {/* <EventBind /> */}
-      <ParentComp />
+      {/* <ParentComp /> */}
+      {/* <Welcome></Welcome> */}
+      {/* <NameList></NameList> */}
+      <StyleSheet primary={true}/>
     </div>
   );
 }
 
 export default App;
+

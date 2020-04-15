@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-
 class Welcome extends Component {
     constructor() {
         super()
         this.state = {
             msg: 'Welcome my page'
         }
+
+        this.isLoggedIn = true;
     }
 
     changeMsg(){
@@ -15,12 +16,17 @@ class Welcome extends Component {
     }
 
     render() {
-        return (
-            <div>
-                <h1>{this.state.msg}</h1>
-                <button onClick={()=>this.changeMsg()}>Subscribe</button>
-            </div>
-        )
+        // return (
+        //     <div>
+        //         <h1>{this.state.msg}</h1>
+        //         <button onClick={()=>this.changeMsg()}>Subscribe</button>
+        //     </div>
+        // )
+
+        return this.isLoggedIn ? 
+        (<div>Hello Tenzin !</div>):
+        (<div>Hello guest !</div>);
+
     }
 }
 
