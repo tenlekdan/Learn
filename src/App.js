@@ -19,6 +19,8 @@ import Form from './components/Form';
 import LifecyleA from './components/LifecyleA';
 import FragmentDemo from './FragmentDemo';
 import Table from './components/Table';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 function App() {
   return (
     <div className="App">
@@ -36,7 +38,9 @@ function App() {
       {/* <Form/> */}
       {/* <LifecyleA /> */}
       {/* <FragmentDemo /> */}
-      <Table />
+      {/* <Table /> */}
+      <ClickCounter />
+      <HoverCounter />
     </div>
   );
 }
